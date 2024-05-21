@@ -1,5 +1,4 @@
 //U9414-0233
-//1. Car Class Constructor
 //Implement a Car class with a constructor that initializes the make (brand of the car) and speed (current speed in km/h) properties.
 
 accelerate_KPHvalue = 10
@@ -13,7 +12,11 @@ class Car {
     //Implement an accelerate method in the Car class that increases the car's speed by 10 km/h and logs the new speed to the console.
     accelerate() {
         this.currentKPH += accelerate_KPHvalue;
-        console.log ("The new speed of the " + this.make + " is " + this.speed + "KM/h.")
+        console.log ("The new speed of the " + this.make + " after accelerating " + accelerate_KPHvalue + "KM/h is " + this.speed + "KM/h.");
     }
-
+    //Implement a brake method that decreases the car's speed by 5 km/h and logs the new speed to the console.
+    brake() {
+        this.currentKPH -= brake_KPHvalue;
+        console.log ("The new speed of the " + this.make + " after braking " + brake_KPHvalue + "KM/h is " + this.speed + "KM/h.");
+    }
 }
